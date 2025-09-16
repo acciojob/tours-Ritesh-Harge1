@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Tours from "./Tours";
 import Loading from "./Loading";
 
-// Sample API URL (you can replace it with provided URL)
+// API URL provided by AccioJob or a sample
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
@@ -27,8 +27,7 @@ function App() {
   }, []);
 
   const removeTour = (id) => {
-    const newTours = tours.filter((tour) => tour.id !== id);
-    setTours(newTours);
+    setTours(tours.filter((tour) => tour.id !== id));
   };
 
   if (loading) {
