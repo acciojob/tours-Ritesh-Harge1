@@ -26,3 +26,4 @@ function Tour({ id, name, info, image, price, removeTour }) {
 }
 
 export default Tour;
+
